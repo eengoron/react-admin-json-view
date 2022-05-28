@@ -16,7 +16,10 @@ export const JsonField: React.FC<Props> = ({
   jsonString = false,
   reactJsonOptions = {},
 }) => {
+  console.error(record)
+  console.error(source)
   let src = get(record, source);
+  console.error(src)
 
   if (jsonString) {
     src = JSON.parse(src);
